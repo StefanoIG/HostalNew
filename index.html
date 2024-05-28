@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hostal</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#">
+          <img
+            src="/public/piazolla_logo.png"
+            alt="Logo Hostal piazolla"
+            id="logo"
+          />
+        </a>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a class="link-nav" href="#">Inicio</a></li>
+            <li><a class="link-nav" href="#our-rooms">Habitaciones</a></li>
+            <li><a class="link-nav" href="#localizacion">Localizacion</a></li>
+            <li><a class="link-nav" href="Servicios.html">Servicios</a></li>
+            <li><a class="link-nav" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <button id="btn-reserva">Reserva</button>
+      </div>
+    </header>
+    <main>
+      <section class="section-1">
+        <div class="section-1-top">
+          <div class="child-section-1-top">
+            <h1 class="title">Hostal Piazolla.</h1>
+            <br />
+            <p class="text-gray">
+              Un lugar para descansar y disfrutar de la naturaleza
+            </p>
+            <p>
+              Hostal Piazzolla, ¡Haciendo De Su Estadía Una Experiencia
+              Agradable!
+            </p>
+            <br />
+            <button class="btn-primary">Mirar Habitaciones</button>
+          </div>
+          <div class="child-section-1-top img-container"></div>
+        </div>
+        <div class="section-1-bottom">
+          <div class="input-booking">
+            <div>
+              <label for="check-in">Check-in</label>
+              <input type="date" id="check-in" />
+            </div>
+            <div>
+              <label for="check-out">Check-out</label>
+              <input type="date" id="check-out" />
+            </div>
+            <div>
+              <label for="guests">Huespedes</label>
+              <input type="number" id="guests" />
+            </div>
+            <div>
+              <button id="btn-booking">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-2">
+        <h1 id="our-rooms" class="title">Nuestas Habitaciones.</h1>
+        <div class="flex-box">
+          <p class="text-small text-gray">
+            Hostal Piazzolla tiene para usted, habitaciones con decoración. Cada
+            una de nuestras habitaciones posee baño privado, Televisión por
+            Cable con cobertura nacional e internacional.
+          </p>
+          <button class="btn-secondary">Ver mas</button>
+        </div>
+        <div class="card-list">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="/public/como-decorar-una-habitacion-de-matrimonio_99bb8f5b_FER8191b_231114150325_900x900.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-info">
+              <pc class="text-sm"
+                >Habitaciones individuales (una sola persona)</pc
+              >
+              <p class="text-gray text-small">Desde $25.00</p>
+              <div class="text-sm">
+                Disponibilidad: <span class="green-text">7</span>
+              </div>
+              <br />
+              <div class="card-menu">
+                <button class="btn-primary">Reservar</button>
+                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="/public/como-decorar-una-habitacion-de-matrimonio_99bb8f5b_FER8191b_231114150325_900x900.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-info">
+              <pc class="text-sm"
+                >Habitaciones matrimoniales (una cama para una pareja)</pc
+              >
+              <p class="text-gray text-small">Desde $35.00</p>
+              <div class="text-sm">
+                Disponibilidad: <span class="green-text">8</span>
+              </div>
+              <br />
+              <div class="card-menu">
+                <button class="btn-primary">Reservar</button>
+                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="/public/como-decorar-una-habitacion-de-matrimonio_99bb8f5b_FER8191b_231114150325_900x900.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-info">
+              <pc class="text-sm">Habitaciones dobles (2 camas)</pc>
+              <p class="text-gray text-small">Desde $35.00</p>
+              <div class="text-sm">
+                Disponibilidad: <span class="green-text">5</span>
+              </div>
+              <br />
+              <div class="card-menu">
+                <button class="btn-primary">Reservar</button>
+                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="/public/como-decorar-una-habitacion-de-matrimonio_99bb8f5b_FER8191b_231114150325_900x900.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-info">
+              <pc class="text-sm">Habitaciones triples (3 camas)</pc>
+              <p class="text-gray text-small">Desde $54.00</p>
+              <div class="text-sm">
+                Disponibilidad: <span class="green-text">2</span>
+              </div>
+              <br />
+              <div class="card-menu">
+                <button class="btn-primary">Reservar</button>
+                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="/public/como-decorar-una-habitacion-de-matrimonio_99bb8f5b_FER8191b_231114150325_900x900.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-info">
+              <pc class="text-sm">Habitaciones cuadruples (4 camas)</pc>
+              <p class="text-gray text-small">Desde $72.00</p>
+              <div class="text-sm">
+                Disponibilidad: <span class="green-text">2</span>
+              </div>
+              <br />
+              <div class="card-menu">
+                <button class="btn-primary">Reservar</button>
+                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section-3">
+        <h1 class="title" id="localizacion">Encuentranos</h1>
+        <p class="text-small">
+          Hostal Piazzolla es un lugar acogedor que pone a disposicion de sus
+          distingidos clientes el servicio de hospedaje ubicado en una zona
+          exclusiva de Manta, Con la comodidad que Ud. merece para sus
+          actividades de relax, ocio y de negocios.
+        </p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7978.513425522214!2d-80.70512354569655!3d-0.9613524684294282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902be6bcdfe574f9%3A0xb53fc671b9de6634!2sHOSTAL%20PIAZZOLLA!5e0!3m2!1ses-419!2sec!4v1716883603286!5m2!1ses-419!2sec"
+          width="800"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+      
+    </main>
+  </body>
+</html>
