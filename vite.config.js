@@ -11,7 +11,7 @@ export default defineConfig({
                 about: resolve(__dirname, 'about.html'),
                 servicios: resolve(__dirname, 'Servicios.html'),
                 menu: resolve(__dirname, 'Menu.html'),
-                bebidas: resolve(__dirname, 'Bebidas.html'),
+                bebidas: resolve(__dirname, 'bebida.html'),
                 cervezas: resolve(__dirname, 'Cervezas.html'),
                 cocteles: resolve(__dirname, 'Cocteles.html'),
                 piqueos: resolve(__dirname, 'Piqueos.html'),
