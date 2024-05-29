@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <title>Hostal </title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#">
+          <img src="/public/piazolla_logo.png" alt="Logo Hostal piazolla" id="logo">
+        </a>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a class="link-nav" href="index.html">Inicio</a></li>
+            <li><a class="link-nav" href="index.html#our-rooms">Habitaciones</a></li>
+            <li><a class="link-nav" href="#">Localizacion</a></li>
+            <li><a class="link-nav" href="Servicios.html">Servicios</a></li>
+            <li><a class="link-nav" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <button id="btn-reserva">Reserva</button>
+      </div>
+    </header>
+
+    <body>
+        <div class="menu-container">
+            <div class="menu-opcion">
+                <h1>Piazzolla Hostal</h1>
+                <h2>Cocteles</h2>
+            </div>
+            <section class="menu-section">
+                <div class="menu-item">
+                    <h3>Mojito</h3>
+                    <p>Disfrutalo: Clásico, Maracuya, Frutos rojos - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                    <h3>Tequila Sunrise</h3>
+                    <p>Tequila, naranja, granadina - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                    <h3>Piña Colada</h3>
+                    <p>Sabor tropical de la piña, coco y un agradable toque de ron - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                    <h3>Orgasmo</h3>
+                    <p>Licor de cafe. Crema de whisky y amaretto - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                    <h3>Margarita Corona</h3>
+                    <p>Tequila, trile sec, limon, corona- <span>$7.99</span></p>
+                </div>
+                <div class="menu-item">
+                    <h3>Ron Alexander</h3>
+                    <p>Ron, licor de cacao, canela molida, leche condensada - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                    <h3>Margarita</h3>
+                    <p>Clasica, maracuya, furtos rojos  - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                    <h3>Vaso de whisky </h3>
+                    <p>Old par/ Jhonny Rojo/ A las rocas/guitig - <span>$5.99</span></p>
+                </div>
+                <div class="menu-item">
+                  <h3>Cosmopolitan </h3>
+                  <p>Vodka, tirple sec, jugo de arandanos, cereza y limon- <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                  <h3>Beso negro </h3>
+                  <p>Vodka, licor de cafe - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                  <h3>Cuba Libre </h3>
+                  <p>Mezcla de gaseosa con ron blanco y limon muy refrescante - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                  <h3>Daiquiri </h3>
+                  <p>Ron, triple sec, azucar, limon o maracuya - <span>$4.99</span></p>
+                </div>
+                <div class="menu-item">
+                  <h3>Vodka o gin tonic</h3>
+                  <p>Vodka o gin, agua tonica, limon - <span>$4.99</span></p>
+                </div>
+
+            </section>
+           
+        </div>
+    </body>
+    <footer>
+      <div class="footer-child">
+        <div class="logo-container">
+          <img src="/public/piazolla_logo.png" alt="" />
+        </div>
+        <div>
+          <form action="" id="suscript-form">
+            <label for="suscipcion" class="green-text"
+              >Enterate de todo lo nuevo</label
+            >
+            <div>
+              <input
+                type="email"
+                id="suscipcion-input"
+                name="email"
+                placeholder="Tu email aqui"
+              />
+              <button type="button" class="btn-secondary">Enviar</button>
+            </div>
+          </form>
+          <br />
+          <div>
+            <p class="text-gray text-sm">
+              Contáctenos reservacion. hostalpiazzolla@gmail.com <br />
+              Teléfonos: +593-52384115 / +593-52382622 / +593-939569157
+              <br />
+              <span
+              ><a href="https://api.whatsapp.com/send?phone=593979089004" target="_blank">Escribenos a WhatsApp</a
+                ></span
+              >
+            </p>
+            <br />
+            <p class="text-gray text-sm">
+              Dirección: <br />
+              Ciudadela Las Colinas Vía Manta - Aeropuerto, Ref: A 3 Cuadras De
+              La Clínica San Gregorio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-child flex-box flex-start">
+        <div>
+          <h3 class="text-gray">Enlaces Rapidos</h3>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./index.html#our-rooms">Habitaciones</a></li>
+            <li><a href="./index.html#localizacion">Localizacion</a></li>
+            <li><a href="./Servicios.html">Servicios</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./about.html">Sobre Nosotros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-gray">Redes Sociales</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/HostalPiazzollaManta">Facebook</a></li>
+            <li><a href="https://www.instagram.com/hostal.piazzolla/">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div>
+      <p class="text-gray text-sm">Hostal Piazolla © 2024</p>
+      <p class="text-sm">
+        Powered by: <span class="green-text text-sm">AMB Systems.</span>
+      </p>
+    </div>
+    <script>
+      document.getElementById('btn-reserva').addEventListener('click', function() {
+        Swal.fire({
+          title: 'Reserva',
+          html: `
+          <div class="contacto-texto">
+            <p class="contact-info"> Por el momento no contamos con reservaciones mediante la pagina, pero puedes escribirnos para reservar tu habitacion ideal !</p>
+            <p class="contact-info"><strong>Numero 1:</strong> <img src="public/WhatsApp.svg.webp" alt="whatsappLogo" class="logo"> <a href="https://api.whatsapp.com/send?phone=593979089004" target="_blank">+593 97 908 9004</a></p>
+            <p class="contact-info"><strong>Numero 2:</strong> <img src="public/WhatsApp.svg.webp" alt="whatsappLogo" class="logo"> <a href="https://api.whatsapp.com/send?phone=593990927132" target="_blank">+593 99 092 7132</a></p>
+          </div>
+            `,
+          icon: 'info',
+          confirmButtonText: 'OK'
+        });
+      });
+    </script>
+  </body>
+</html>

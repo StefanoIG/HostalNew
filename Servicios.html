@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />    
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Hostal</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="./index.html">
+          <img
+            src="./public/piazolla_logo.png"
+            alt="Logo Hostal piazolla"
+            id="logo"
+          />
+        </a>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a class="link-nav" href="./index.html">Inicio</a></li>
+            <li>
+              <a class="link-nav" href="./index.html#our-rooms">Habitaciones</a>
+            </li>
+            <li>
+              <a class="link-nav" href="./index.html#localizacion"
+                >Localizacion</a
+              >
+            </li>
+            <li><a class="link-nav" href="./Servicios.html">Servicios</a></li>
+            <li><a class="link-nav" href="./contacto.html">Contacto</a></li>
+            <li><a class="link-nav" href="./about.html">Sobre Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <button id="btn-reserva">Reserva</button>
+      </div>
+    </header>
+
+    <!-- do -->
+    <!-- Seccion para poner que se tiene wifi, estacionamiento y bar entre otros -->
+    <main>
+      <section class="section-1">
+        <div class="widgets-main">
+          <div class="widget">
+            <h1>Contamos con piscina</h1>
+            <p>
+              Aquí puedes disfrutar de nuestra piscina con agua cristalina y
+              temperatura controlada. Ideal para relajarte después de un día
+              agotador.
+            </p>
+          </div>
+
+          <div class="widget">
+            <h1>Amplio menú de bebidas y bocaditos</h1>
+            <p>
+              Disfruta de nuestra amplia variedad de bebidas, tanto alcohólicas
+              como no alcohólicas, acompañadas de deliciosos bocaditos. ¡Abierto
+              desde el Martes al Domingo!
+            </p>
+            <button id="btn-menu" class="btn-primary">
+              Conoce nuestro menú
+            </button>
+          </div>
+
+          <div class="widget">
+            <h1>Wifi gratis</h1>
+            <p>
+              Te ofrecemos conexión a internet de alta velocidad en todas las
+              áreas del hostal. ¡No te pierdas de nada!
+            </p>
+          </div>
+
+          <div class="widget">
+            <h1>Parqueadero gratis</h1>
+            <p>
+              Te ofrecemos un amplio parqueadero gratuito, donde podrás dejar tu
+              vehículo sin preocuparte.
+            </p>
+          </div>
+
+          <div class="widget">
+            <h1>Amplia seguridad</h1>
+            <p>
+              Contamos con botón de pánico y varias cámaras a lo largo de las
+              instalaciones para brindarte la mayor seguridad durante tu
+              estancia.
+            </p>
+          </div>
+
+          <div class="widget">
+            <h1>Explora la ciudad</h1>
+            <p>
+              Te ofrecemos información turística y recomendaciones para que
+              puedas explorar los lugares más interesantes de la ciudad y
+              disfrutar de su cultura.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-child">
+        <div class="logo-container">
+          <img src="/public/piazolla_logo.png" alt="" />
+        </div>
+        <div>
+          <form action="" id="suscript-form">
+            <label for="suscipcion" class="green-text"
+              >Enterate de todo lo nuevo</label
+            >
+            <div>
+              <input
+                type="email"
+                id="suscipcion-input"
+                name="email"
+                placeholder="Tu email aqui"
+              />
+              <button type="button" class="btn-secondary">Enviar</button>
+            </div>
+          </form>
+          <br />
+          <div>
+            <p class="text-gray text-sm">
+              Contáctenos reservacion. hostalpiazzolla@gmail.com <br />
+              Teléfonos: +593-52384115 / +593-52382622 / +593-939569157
+              <br />
+              <span
+              ><a href="https://api.whatsapp.com/send?phone=593979089004" target="_blank">Escribenos a WhatsApp</a
+                ></span
+              >
+            </p>
+            <br />
+            <p class="text-gray text-sm">
+              Dirección: <br />
+              Ciudadela Las Colinas Vía Manta - Aeropuerto, Ref: A 3 Cuadras De
+              La Clínica San Gregorio.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-child flex-box flex-start">
+        <div>
+          <h3 class="text-gray">Enlaces Rapidos</h3>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./index.html#our-rooms">Habitaciones</a></li>
+            <li><a href="./index.html#localizacion">Localizacion</a></li>
+            <li><a href="./Servicios.html">Servicios</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./about.html">Sobre Nosotros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-gray">Redes Sociales</h3>
+          <ul>
+            <li><a href="https://www.facebook.com/HostalPiazzollaManta">Facebook</a></li>
+            <li><a href="https://www.instagram.com/hostal.piazzolla/">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div>
+      <p class="text-gray text-sm">Hostal Piazolla © 2024</p>
+      <p class="text-sm">
+        Powered by: <span class="green-text text-sm">AMB Systems.</span>
+      </p>
+    </div>
+    <script>
+      const btnMenu = document.getElementById("btn-menu");
+      btnMenu.addEventListener("click", () => {
+        window.location.href = "./Menu.html";
+      });
+    </script>
+
+    <script>
+      document.getElementById('btn-reserva').addEventListener('click', function() {
+        Swal.fire({
+          title: 'Reserva',
+          html: `
+          <div class="contacto-texto">
+            <p class="contact-info"> Por el momento no contamos con reservaciones mediante la pagina, pero puedes escribirnos para reservar tu habitacion ideal !</p>
+            <p class="contact-info"><strong>Numero 1:</strong> <img src="public/WhatsApp.svg.webp" alt="whatsappLogo" class="logo"> <a href="https://api.whatsapp.com/send?phone=593979089004" target="_blank">+593 97 908 9004</a></p>
+            <p class="contact-info"><strong>Numero 2:</strong> <img src="public/WhatsApp.svg.webp" alt="whatsappLogo" class="logo"> <a href="https://api.whatsapp.com/send?phone=593990927132" target="_blank">+593 99 092 7132</a></p>
+          </div>
+            `,
+          icon: 'info',
+          confirmButtonText: 'OK'
+        });
+      });
+    </script>
+
+  </body>
+</html>
