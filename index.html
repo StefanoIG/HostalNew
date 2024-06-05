@@ -1,20 +1,17 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />    
-    <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="contacto.css" />
+    <link rel="stylesheet" href="Style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <title>Hostal Piazzolla</title>
   </head>
   <body>
@@ -50,11 +47,11 @@
         <button id="btn-reserva">Reserva</button>
       </div>
     </header>
-    <main>
+    <main >
       <section class="section-1">
         <div class="section-1-top">
           <div class="child-section-1-top">
-            <h1 class="title">Hostal Piazolla.</h1>
+            <h1 class="title">Hostal Piazzolla.</h1>
             <br />
             <p class="text-gray">
               Un lugar para descansar y disfrutar de la naturaleza
@@ -71,13 +68,16 @@
           <div class="child-section-1-top img-container">
             <div class="slider">
               <div class="slide">
-                <img src="/public/fondo3.jpeg" alt="Imagen 1" />
+                <img src="/public/hostal-piazzolla.jpeg" alt="Imagen 1" />
               </div>
               <div class="slide">
-                <img src="/public/fondo2.jpeg" alt="Imagen 2" />
+                <img src="/public/hostal-chica.jpeg" alt="Imagen 2" />
               </div>
               <div class="slide">
-                <img src="/public/fondo3.jpeg" alt="Imagen 3" />
+                <img src="/public/hostal-chicas.jpeg" alt="Imagen 3" />
+              </div>
+              <div class="slide">
+                <img src="/public/fondo2.jpeg" alt="Imagen 3" />
               </div>
             </div>
             <button class="prev">&laquo;</button>
@@ -104,6 +104,7 @@
           </div>
         </div>
       </section>
+
       <section class="section-2">
         <h1 id="our-rooms" class="title">Nuestas Habitaciones.</h1>
         <div class="flex-box">
@@ -117,10 +118,7 @@
         <div class="card-list">
           <div class="card">
             <div class="card-img">
-              <img
-                src="/public/habitacion-inidividual.jpeg"
-                alt=""
-              />
+              <img src="/public/habitacion-inidividual.jpeg" alt="" />
             </div>
             <div class="card-info">
               <pc class="text-sm"
@@ -133,16 +131,13 @@
               <br />
               <div class="card-menu">
                 <button class="btn-primary">Reservar</button>
-                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+                <a href="" id="individual" class="text-small">Leer mas sobre esta habitacion</a>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img
-                src="/public/habitacion-matrimonio.jpeg"
-                alt=""
-              />
+              <img src="/public/habitacion-matrimonio.jpeg" alt="" />
             </div>
             <div class="card-info">
               <pc class="text-sm"
@@ -154,15 +149,15 @@
               </div>
               <br />
               <div class="card-menu">
-                <button class="btn-primary">Reservar</button>
-                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+                <button class="btn-primary ">Reservar</button>
+                <a href="" id="matrimonial" class="text-small">Leer mas sobre esta habitacion</a>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
               <img
-                src="./public/como-decorar-una-habitacion-de-matrimonio_99bb8f5b_FER8191b_231114150325_900x900.jpg"
+                src="./public/hostal-chicas-2.jpeg"
                 alt=""
               />
             </div>
@@ -175,16 +170,13 @@
               <br />
               <div class="card-menu">
                 <button class="btn-primary">Reservar</button>
-                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+                <a href="" id="dobles" class="text-small">Leer mas sobre esta habitacion</a>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img
-                src="./public/habitacion-3-camas.jpg"
-                alt=""
-              />
+              <img src="./public/habitacion-3-camas.jpg" alt="" />
             </div>
             <div class="card-info">
               <pc class="text-sm">Habitaciones triples (3 camas)</pc>
@@ -195,16 +187,13 @@
               <br />
               <div class="card-menu">
                 <button class="btn-primary">Reservar</button>
-                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+                <a href="" id="triples" class="text-small">Leer mas sobre esta habitacion</a>
               </div>
             </div>
           </div>
           <div class="card">
             <div class="card-img">
-              <img
-                src="./public/habitacion-4-camas.jpg"
-                alt=""
-              />
+              <img src="./public/habitacion-4-camas.jpg" alt="" />
             </div>
             <div class="card-info">
               <pc class="text-sm">Habitaciones cuadruples (4 camas)</pc>
@@ -215,12 +204,13 @@
               <br />
               <div class="card-menu">
                 <button class="btn-primary">Reservar</button>
-                <a href="" class="text-small">Leer mas sobre esta habitacion</a>
+                <a href="" id="cuadruples" class="text-small">Leer mas sobre esta habitacion</a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="section-3">
         <h1 class="title" id="localizacion">Encuentranos</h1>
         <p class="text-small">
@@ -266,15 +256,16 @@
                 Teléfonos: +593-52384115 / +593-52382622 / +593-939569157
                 <br />
                 <span
-                ><a href="https://api.whatsapp.com/send?phone=593979089004" target="_blank">Escribenos a WhatsApp</a
+                  ><a href="" class="green-text font-mid"
+                    >Escribenos a WhatsApp</a
                   ></span
                 >
               </p>
               <br />
               <p class="text-gray text-sm">
                 Dirección: <br />
-                Ciudadela Las Colinas Vía Manta - Aeropuerto, Ref: A 3 Cuadras De
-                La Clínica San Gregorio.
+                Ciudadela Las Colinas Vía Manta - Aeropuerto, Ref: A 3 Cuadras
+                De La Clínica San Gregorio.
               </p>
             </div>
           </div>
@@ -294,8 +285,10 @@
           <div>
             <h3 class="text-gray">Redes Sociales</h3>
             <ul>
-              <li><a href="https://www.facebook.com/HostalPiazzollaManta">Facebook</a></li>
-              <li><a href="https://www.instagram.com/hostal.piazzolla/">Instagram</a></li>
+              <li><a href="">Facebook</a></li>
+              <li><a href="">Instagram</a></li>
+              <li><a href="">Twitter</a></li>
+              <li><a href="">Youtube</a></li>
             </ul>
           </div>
         </div>
@@ -307,51 +300,9 @@
         </p>
       </div>
     </main>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          const slides = document.querySelectorAll('.slide');
-          const prevButton = document.querySelector('.prev');
-          const nextButton = document.querySelector('.next');
-          let currentSlide = 0;
-      
-          function showSlide(index) {
-              slides.forEach((slide, i) => {
-                  slide.style.transform = `translateX(${(i - index) * 100}%)`;
-              });
-          }
-      
-          function showNextSlide() {
-              currentSlide = (currentSlide + 1) % slides.length;
-              showSlide(currentSlide);
-          }
-      
-          function showPrevSlide() {
-              currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-              showSlide(currentSlide);
-          }
-      
-          nextButton.addEventListener('click', showNextSlide);
-          prevButton.addEventListener('click', showPrevSlide);
-      
-          showSlide(currentSlide); // Show the initial slide
-      });
-      </script>
-      <!-- Script de modal -->
-       <script>
-        document.getElementById('btn-reserva').addEventListener('click', function() {
-          Swal.fire({
-            title: 'Reserva',
-            html: `
-            <div class="contacto-texto">
-              <p class="contact-info"> Por el momento no contamos con reservaciones mediante la pagina, pero puedes escribirnos para reservar tu habitacion ideal !</p>
-              <p class="contact-info"><strong>Numero 1:</strong> <img src="public/WhatsApp.svg.webp" alt="whatsappLogo" class="logo"> <a href="https://api.whatsapp.com/send?phone=593979089004" target="_blank">+593 97 908 9004</a></p>
-              <p class="contact-info"><strong>Numero 2:</strong> <img src="public/WhatsApp.svg.webp" alt="whatsappLogo" class="logo"> <a href="https://api.whatsapp.com/send?phone=593990927132" target="_blank">+593 99 092 7132</a></p>
-            </div>
-              `,
-            icon: 'info',
-            confirmButtonText: 'OK'
-          });
-        });
-      </script>
+    <script src="script.js">
+       
+
+    </script>
   </body>
 </html>

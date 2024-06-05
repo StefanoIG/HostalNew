@@ -212,7 +212,6 @@ input:focus {
 }
 .btn-primary:hover {
   background-color: transparent;
-  color: #007A7D;
   border: 1px solid #005F60;
 }
 
@@ -337,14 +336,14 @@ input:focus {
 .widgets-main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px; /* Increased gap */
   padding: 20px;
-  background-color: #e0f7fa;
   font-family: 'Roboto', sans-serif;
+ 
 }
 
 .widget {
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  background: linear-gradient(145deg, rgba(248, 248, 248, 0.8), rgba(230, 230, 230, 0.8)); /* Softer and more transparent color */
   border-radius: 15px;
   padding: 20px;
   margin: 0;
@@ -353,38 +352,28 @@ input:focus {
   text-align: center;
   position: relative;
   overflow: hidden;
-}
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* add background-color to transition */
 
-.widget::before {
-  content: '';
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(0, 123, 255, 0.1);
-  border-radius: 50%;
-  z-index: 0;
-}
-
-.widget:hover {
-  transform: translateY(-10px);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2), -4px -4px 15px rgba(255, 255, 255, 0.7);
 }
 
 .widget h1 {
   color: #333;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 26px; /* Increased font size */
   font-weight: bold;
   text-align: center;
   z-index: 1;
   position: relative;
 }
 
+.widget:hover {
+  transform: scale(1.02); /* scale up when hovered */
+  background: linear-gradient(145deg, #e6e6e6, #f8f8f8); /* change background color when hovered */
+}
+
 .widget p {
   color: #666;
-  font-size: 16px;
+  font-size: 18px; /* Increased font size */
   line-height: 1.5;
   text-align: justify;
   z-index: 1;
@@ -393,7 +382,7 @@ input:focus {
 
 .widget button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 24px; /* Increased padding */
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -404,13 +393,29 @@ input:focus {
   transition: background-color 0.3s, transform 0.3s;
   z-index: 1;
   position: relative;
+  animation: shake 5s infinite; /* add shake animation */
 }
 
 .widget button:hover {
   background-color: #0056b3;
   transform: scale(1.05);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Added hover effect */
+  
 }
 
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 /* Menu */
 
 .menu-container {
@@ -732,25 +737,6 @@ footer {
   gap: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .section-1 {
   display: flex;
   flex-direction: column;
@@ -784,10 +770,14 @@ footer {
   transition: transform 0.5s ease-in-out;
 }
 
+
 .slide img {
   width: 100%;
   display: block;
   object-fit: cover;
+}
+.slide img:loaded {
+  opacity: 1;
 }
 
 .prev, .next {
@@ -851,4 +841,14 @@ footer {
 
 .contacto-texto .contact-info strong {
   color: #000000;
+}
+
+.section-2 {
+  width: 100%;
+  background-image: url("../public/fondo2.jpeg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 600px;
 }
