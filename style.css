@@ -845,8 +845,8 @@ footer {
 
 .section-2 {
   width: 100%;
-  background-image: url('/public/fondo2.jpeg');
-      background-size: cover;
+  background-image: url('./public/fondo2.jpeg');
+  background-size: cover;
   background-position: center;
   border-radius: 20px;
   overflow: hidden;
