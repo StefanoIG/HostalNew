@@ -410,6 +410,24 @@ button.addEventListener('click', function() {
   });
 });
 });
+
+document.getElementById('btn-booking').addEventListener('click', function() {
+    Swal.fire({
+        toast: true,
+        text: 'La función por el momento no está disponible',
+        icon: 'info',
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 1000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    }).then(() => {
+        window.location.href = 'https://api.whatsapp.com/send?phone=593990927132';
+    });
+});
     </script>
   </body>
 </html>
